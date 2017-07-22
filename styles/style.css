@@ -111,11 +111,26 @@ body {
     z-index: 100;
 }
 
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-wrapper > * {
+    flex: 1 100%;
+}
+
+
 .section {
     position: relative;
     width: 100%;
     text-align: center;
     z-index:0;
+}
+
+.section-image{
+    text-align: center;
 }
 
 .profile-img-wrapper {
@@ -142,6 +157,10 @@ body {
     text-align: center;
 }
 
+.section-image {
+
+}
+
 .section.contact {
     margin-bottom: 3rem;
 }
@@ -153,4 +172,28 @@ body {
 .LI-profile-badge {
     text-align: left;
     display: inline-block;
+}
+
+
+@media screen and (min-width: 700px){
+    .section-image{
+        flex: 1 30%;
+        align-self: center;
+    }
+     #about_section {
+        flex: 1 70%;
+    }
+
+    .profile-img-wrapper {
+    width: 60%;
+    padding-top: 60%;
+    }
+
+    #about_section p.bio {
+    padding: 0rem 10% 1.5rem 0;
+    }
+
+    #about_section .section-header{
+        padding: 1rem 10% 1.5rem 0;
+    }
 }
