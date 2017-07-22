@@ -5,16 +5,35 @@
 }
 
 html{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1, h4,  h5{
-    font-weight: normal;
+h1{
+    font-family: monospace;
+    background: rgba(20,20,20,.5);
+    display: inline-block;
+    padding: 1rem;
 }
 
 body {
 
 }
+
+@keyframes cursorBlink {
+    0%   { opacity: 0; }
+    50%   { opacity: 1; }
+}
+
+
+.cursor {
+    animation: cursorBlink 1s steps(1, end) infinite;
+}
+
+.cursoroff {
+    opacity: 0;
+}
+
 
 .page-header {
     text-align: center;
@@ -27,8 +46,7 @@ body {
 }
 
 .page-header h1{
-font-family: 'Vast Shadow', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .section-header {
