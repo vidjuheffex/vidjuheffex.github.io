@@ -177,11 +177,11 @@ body {
 
 @media screen and (min-width: 700px){
     .section-image{
-        flex: 1 30%;
+        flex: 1 40%;
         align-self: center;
     }
      #about_section {
-        flex: 1 70%;
+        flex: 1 60%;
     }
 
     .profile-img-wrapper {
