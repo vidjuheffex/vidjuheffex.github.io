@@ -57,6 +57,7 @@ body {
 .navigation-bar-dummy {
     width: 100%;
     height: 3rem;
+    position: absolute;
 }
 
 .navigation-bar {
@@ -65,7 +66,6 @@ body {
     display: table;
     background: #F6F6F6;
     position: relative;
-    top: -3rem;
     z-index: 0;
 }
 
@@ -91,7 +91,7 @@ body {
     text-align: center;
     vertical-align: middle;
     font-weight: lighter;
-    width: 33%;
+    width: 25%;
     font-size: 1.1rem;
 }
 
@@ -115,10 +115,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 2rem 10%;
 }
 
 .content-wrapper > * {
     flex: 1 100%;
+    padding: 0;
 }
 
 
@@ -145,7 +147,7 @@ body {
 .bio {
     font-family: serif;
     text-align: justify;
-    padding: 0rem 10% 1.5rem 10%;
+    padding: 0rem 0 1rem 0;
     line-height: 1.5rem;
 }
 
@@ -182,7 +184,17 @@ body {
     }
      #about_section {
         flex: 1 60%;
-    }
+     }
+
+     #code_card {
+         flex: 1;
+         align-self: center;
+     }
+
+     #code_section{
+         flex: 2;
+         padding-right: 2rem;
+     }
 
     .profile-img-wrapper {
     width: 60%;
@@ -190,10 +202,14 @@ body {
     }
 
     #about_section p.bio {
-    padding: 0rem 10% 1.5rem 0;
+    padding: 0rem 0 1rem 0;
+    }
+
+    #code_section p.bio {
+        padding: 0rem 0 1rem 0;
     }
 
     #about_section .section-header{
-        padding: 1rem 10% 1.5rem 0;
+        padding: 1rem 0 1rem 0
     }
 }
