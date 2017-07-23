@@ -68,6 +68,33 @@ var data = (function(){
                    ],
             img:"etm.jpg"
         },
+        {
+            title: "Crumby Pictures",
+            url: "https://www.youtube.com/watch?v=j-LfQCPJJkY",
+            roles: ["visual effects supervisor",
+                    "matchmover",
+                    "compositor"
+                   ],
+            img:"cp.jpg"
+        },
+        {
+            title: "Once Upon A Sesame Street Christmas",
+            url: "https://www.youtube.com/watch?v=Ji-lDSSrGqg",
+            roles: ["visual effects supervisor",
+                    "matchmover",
+                    "compositor"
+                   ],
+            img:"ssc.jpg"
+        },
+        {
+            title: "Sesame Street Cookie Thief",
+            url: "https://www.youtube.com/watch?v=Us1z_CXWZVU",
+            roles: ["visual effects supervisor",
+                    "matchmover",
+                    "compositor"
+                   ],
+            img:"ct.jpg"
+        }
     ];
 
     return {

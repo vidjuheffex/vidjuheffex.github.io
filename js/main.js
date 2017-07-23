@@ -11,8 +11,20 @@
                 let image = document.createElement("div");
                 image.classList.add("project-tile");
                 image.setAttribute("style", `background: url('./imgs/thumbs/${e.img}') no-repeat center center; background-size: cover`);
-                wrapper.appendChild(image);
-                container.appendChild(wrapper);
+              wrapper.appendChild(image);
+              let textBlock = document.createElement("div");
+              textBlock.classList.add("description");
+              let title = document.createElement("h3");
+              let roles = document.createElement("h4");
+              title.textContent = e.title;
+              roles.textContent = e.roles;
+              textBlock.appendChild(title);
+              textBlock.appendChild(roles);
+              wrapper.appendChild(textBlock);
+              container.appendChild(wrapper);
+              wrapper.addEventListener("click", ()=>{
+                window.open(e.url);
+              });
             });
         }
         
