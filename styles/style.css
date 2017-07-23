@@ -135,8 +135,8 @@ body {
 
 .profile-img-wrapper {
     display: inline-block;
-    width: 33%;
-    padding-top: 33%;
+    width: 40%;
+    padding-top: 40%;
     background: url("../imgs/profile.jpg") no-repeat center center;
     background-size: cover;
     border-radius: 50%;
