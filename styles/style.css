@@ -16,8 +16,23 @@ h1{
     padding: 1rem;
 }
 
-body {
 
+.project-container{
+    display:  flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+
+.project-tile-wrapper{
+    flex: 0 100px;
+
+}
+
+.project-tile  {
+    width: 100%;
+    padding-top: 100%;
 }
 
 @keyframes cursorBlink {

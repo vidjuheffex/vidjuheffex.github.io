@@ -1,5 +1,26 @@
 (function(){
 
+    var projects = (function(){
+      
+        function init(){
+            let container = document.querySelector(".project-container");
+            
+            data.data.forEach(e => {
+                let wrapper = document.createElement("div");
+                wrapper.classList.add("project-tile-wrapper");
+                let image = document.createElement("div");
+                image.classList.add("project-tile");
+                image.setAttribute("style", `background: url('./imgs/thumbs/${e.img}') no-repeat center center; background-size: cover`);
+                wrapper.appendChild(image);
+                container.appendChild(wrapper);
+            });
+        }
+        
+        return {
+            init: init
+        };
+    })();
+
     var eventManager = (function() {
 
         function init(){
@@ -36,6 +57,7 @@
     var core = (function(){
         function init(){
             eventManager.init();
+            projects.init();
         }
         
         return {
