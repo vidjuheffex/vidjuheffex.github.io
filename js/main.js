@@ -17,7 +17,7 @@
               let title = document.createElement("h3");
               let roles = document.createElement("h4");
               title.textContent = e.title;
-              roles.textContent = e.roles;
+                roles.textContent = e.roles.join(", ");
               textBlock.appendChild(title);
               textBlock.appendChild(roles);
               wrapper.appendChild(textBlock);

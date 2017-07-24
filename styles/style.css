@@ -7,6 +7,7 @@
 html{
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -27,11 +28,12 @@ h1{
 
 .project-tile-wrapper{
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   display: flex;
   flex-wrap: wrap;
   flex: 0 auto auto;
   align-items: center;
+  min-width: calc(100px + 2rem);
 }
 
 .project-tile-wrapper h3{
@@ -40,11 +42,13 @@ h1{
 
 
 .project-tile-wrapper h4{
-  font-size: .5rem;
+  font-size: .6rem;
   font-style: italic;
+  font-weight: normal;
 }
 
 .project-tile  {
+    flex: 0 100px 100px;
   display: inline-block;
     width: 100px;
     height:100px;
@@ -88,9 +92,13 @@ h1{
     font-size: 2rem;
 }
 
-.section-header {
-    padding: 1rem;
+.section-header h2 {
+    padding: .5rem;
     text-align: center;
+    margin: 1rem;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+    display: inline-block;
 }
 
 .navigation-bar-dummy {
@@ -236,8 +244,8 @@ h1{
      }
 
     .profile-img-wrapper {
-    width: 60%;
-    padding-top: 60%;
+    width: 80%;
+    padding-top: 80%;
     }
 
     #about_section p.bio {
